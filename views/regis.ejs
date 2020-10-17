@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <%- include('./pages/navbar') -%>
+        <div class="container">
+            <form id="addform">
+                <div class="row mt-5">
+                    <div class="form-group col-md-6 col-xs-12">
+                        <label for="">username</label>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+
+                    </div>
+                    <div class="form-group col-md-6 col-xs-12">
+                        <label for="">password</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" id="submit" type="submit">submit</button>
+                </div>
+            </form>
+
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+
+</body>
+<link rel="stylesheet" href="/stylesheets/spinner.css">
+<script src="/javascripts/firebase1.js"></script>
+<script>
+    // $().ready(function() {
+    //     $("#submit").click(function() {
+    //         $.post("/data", {
+    //             username: $("#username").val(),
+    //             password: $("#password").val()
+    //         }, function(result) {})
+    //     })
+    // })
+</script>
+
+
+</html>
